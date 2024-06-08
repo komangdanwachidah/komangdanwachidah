@@ -3,10 +3,10 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
+    "build:static": "remix build && remix export",
     "dev": "remix dev",
     "typecheck": "tsc",
-    "deploy": "npm run build && gh-pages -d public",
-    "predeploy": "npm run build"
+    "deploy": "npm run build:static && gh-pages -d build"
   },
   "dependencies": {
     "@react-oauth/google": "^0.11.0",
