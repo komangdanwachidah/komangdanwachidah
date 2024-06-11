@@ -6,8 +6,8 @@ export const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"];
 export const getAuthToken = async () => {
   const privateKeyString = (
     //process.env.GOOGLE_PRIVATE_KEY2 || '{ "privateKey": null }'
-    //'{ "privateKey": "'+process.env.GOOGLE_PRIVATE_KEY+'" }' || '{ "privateKey": null }'
-    '{ "privateKey": '+process.env.GOOGLE_PRIVATE_KEY+' }' || '{ "privateKey": null }'
+    '{ "privateKey": "'+process.env.GOOGLE_PRIVATE_KEY+'" }' || '{ "privateKey": null }'
+    //'{ "privateKey": '+process.env.GOOGLE_PRIVATE_KEY+' }' || '{ "privateKey": null }'
   ).replace(/\n/g, "\\n");
   console.log('process.env.GOOGLE_PRIVATE_KEY '+process.env.GOOGLE_PRIVATE_KEY)
   console.log('privateKeyString '+privateKeyString)
