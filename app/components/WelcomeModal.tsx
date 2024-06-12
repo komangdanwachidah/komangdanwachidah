@@ -24,7 +24,7 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             Undangan Pernikahan
           </h5>
           <h4 className="text-center font-head text-5xl md:text-6xl mb-6 text-gray-800">
-            Ami & Fauzi
+            Wachidah & Komang
           </h4>
 
           <div className="w-[350px] mb-12">

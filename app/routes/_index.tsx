@@ -22,7 +22,7 @@ import GalleryPhotos from "~/components/GalleryPhotos";
 export const meta: V2_MetaFunction = () => {
   return [
     {
-      title: "Undangan Pernikahan - Ami & Fauzi",
+      title: "Undangan Pernikahan - Wachidah & Komang",
     },
     {
       description:
@@ -35,12 +35,12 @@ export const meta: V2_MetaFunction = () => {
       "og:image:type": "image/jpeg",
     },
     {
-      "og:site_name": "amifauzi",
+      "og:site_name": "wachidahkomang",
     },
-    { "og:url": "https://www.amifauzi.com/" },
-    { "og:title": "Undangan Pernikahan - Ami & Fauzi" },
+    { "og:url": "https://komangdanwachidah.vercel.app/" },
+    { "og:title": "Undangan Pernikahan - Wachidah & Komang" },
     {
-      "og:description": `Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu`,
+      "og:description": `Sabtu, 6 Juli 2024 di Balai Gotong Royong, JL Kupang Krajan Tengah 15c`,
     },
     { "og:type": "website" },
 
@@ -48,7 +48,7 @@ export const meta: V2_MetaFunction = () => {
     { "twitter:card": "summary_large_image" },
     {
       "twitter:description":
-        "Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu",
+        "Sabtu, 6 Juli 2024 di Balai Gotong Royong, JL Kupang Krajan Tengah 15c",
     },
   ];
 };
@@ -95,13 +95,13 @@ export default function Index() {
             className="text-center font-head font-bold text-5xl mb-4 text-[#EFEFEF]"
             style={{ textShadow: "3px 3px 1px #CE7BB0" }}
           >
-            Ami & Fauzi
+            Wachidah & Komang
           </h4>
           <div
             className="text-center font-black font-sans text-md text-[#EFEFEF] italic border-t-2 border-[#CE7BB0] pt-3"
             style={{ textShadow: "2px 2px 1px #CE7BB0" }}
           >
-            30.07.2022
+            6.07.2024
           </div>
         </div>
       </div>
@@ -137,7 +137,7 @@ export default function Index() {
       </SectionWrapper>
 
       <div className="py-24 bg-background text-gray-700 relative text-center font-sans">
-        © {thisYear} by <span className="font-semibold">Fauzi</span>
+        © {thisYear} by <span className="font-semibold">Komang A S</span>
       </div>
 
       <MusicPlayer play={!openWelcome} />

@@ -1,12 +1,13 @@
 import SectionWrapper from "./Utils/SectionWrapper";
 
 const MAP_EMBEDED_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.4787825103076!2d102.53632071475825!3d-3.4758579974702015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e313b7d4f32df4f%3A0xfed4cd3d1030fa70!2sTaman%20Mini%20Perumnas%20Batu%20Galing!5e0!3m2!1sen!2sid!4v1650742704168!5m2!1sen!2sid";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.732553219635!2d112.7272933!3d-7.2712447000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbe334895edf%3A0xb9f6e9b0cc4b72f2!2sJl.%20Kupang%20Krajan%20Tengah%20No.15%2C%20RT.006%2FRW.03%2C%20Kupang%20Krajan%2C%20Kec.%20Sawahan%2C%20Surabaya%2C%20Jawa%20Timur%2060253!5e0!3m2!1sen!2sid!4v1718203299929!5m2!1sen!2sid";
 const MAP_REDIRECT_URL =
-  "https://www.google.com/maps/dir//Taman+Mini+Perumnas+Batu+Galing,+Jl.+Batu+Galing+No.60,+Talang+Rimbo+Lama,+Curup+Tengah,+Rejang+Lebong+Regency,+Bengkulu+39119/@-3.4758526,102.5363207,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x2e313b7d4f32df4f:0xfed4cd3d1030fa70!2m2!1d102.5385094!2d-3.475858!3e0";
-const MAP_TITLE = "Taman Mini Perumnas Batu Galing";
+  "https://www.google.com/maps/place/Jl.+Kupang+Krajan+Tengah+No.15,+RT.006%2FRW.03,+Kupang+Krajan,+Kec.+Sawahan,+Surabaya,+Jawa+Timur+60253/@-7.2712447,112.7272933,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fbe334895edf:0xb9f6e9b0cc4b72f2!8m2!3d-7.2712447!4d112.7272933!16s%2Fg%2F11l371fgs3?entry=ttu";
+
+const MAP_TITLE = "Balai Gotong Royong";
 const MAP_ADDRESS =
-  "Jl. Batu Galing No.60, Talang Rimbo Lama, Kec. Curup Tengah, Kabupaten Rejang Lebong, Bengkulu 39119";
+  "JL Kupang Krajan Tengah 15c, kel KUPANG KRAJAN, kec SAWAHAN, Surabaya, Jatim 60253";
 
 const LocationMap = () => {
   return (
@@ -32,7 +33,13 @@ const LocationMap = () => {
           <div className="md:w-1/2 w-full px-4 mb-6 md:mb-0">
             <div className="sticky top-8 text-center md:text-left">
               <h3 className="text-3xl font-head font-bold mb-3 text-gray-700">
-                Lokasi Pernikahan
+                Lokasi Akad:
+              </h3>
+              <h4 className="text-xl md:text-2xl mb-4 font-sans font-semibold text-gray-700">
+                MASJID BAITUL MURSYIDIN KUPANG KRAJAN TENGAH No 03 SURABAYA
+              </h4>
+              <h3 className="text-3xl font-head font-bold mb-3 text-gray-700">
+                Lokasi Resepsi:
               </h3>
               <h4 className="text-xl md:text-2xl mb-4 font-sans font-semibold text-gray-700">
                 {MAP_TITLE}
