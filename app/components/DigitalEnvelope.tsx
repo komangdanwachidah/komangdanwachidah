@@ -1,4 +1,5 @@
-import { useRef, useState } from "react";
+import qris from "~/images/qris.jpg";
+import { useRef, useState, useEffect } from "react";
 
 const DigitalEnvelope = () => {
   return (
@@ -15,6 +16,7 @@ const DigitalEnvelope = () => {
             name="KOMANG ANGGADA S"
           />
         </div>
+        
         <div className="px-4 mb-10">
           <DebitCard
             bank="BCA"
@@ -22,6 +24,11 @@ const DigitalEnvelope = () => {
             name="WACHIDAH MARIATUR SA'DIYAH"
           />
         </div>
+
+        <div className="px-4 mb-10">
+          <QRISCard />
+        </div>
+
       </div>
     </div>
   );
@@ -52,7 +59,7 @@ const DebitCard = ({ bank, accountNumber, name }: DebitCardProps) => {
 
   return (
     <div
-      className=" flex-shrink-0 rounded-[20px] bg-[#f2d4e7] shadow-lg shadow-[#cbdded] w-full md:w-[430px] h-52 md:h-64 p-6"
+      className=" flex-shrink-0 rounded-[20px] bg-[#f2d4e7] shadow-lg shadow-[#cbdded] w-full md:w-[430px] h-52 md:h-31 p-6"
       style={{
         backgroundImage: "linear-gradient(62deg, #f0bede 0%, #f2d4e7 45%)",
       }}
@@ -87,6 +94,48 @@ const DebitCard = ({ bank, accountNumber, name }: DebitCardProps) => {
         <div className="text-lg md:text-xl font-semibold">{name}</div>
       </div>
     </div>
+  );
+};
+
+let isHydrated = true;
+
+const QRISCard = () => {
+  const [isHydrated, setIsHydrated] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+
+  const openFullscreen = () => setIsFullscreen(true);
+  const closeFullscreen = () => setIsFullscreen(false);
+
+  return (
+    <>
+      {isHydrated ? (
+        <div
+          className="flex-shrink-0 rounded-[20px] bg-[#f2d4e7] shadow-lg shadow-[#cbdded] w-full md:w-[430px] h-72 md:h-96 p-6 flex items-center justify-center cursor-pointer"
+          style={{
+            backgroundImage: "linear-gradient(62deg, #f0bede 0%, #f2d4e7 45%)",
+          }}
+          onClick={openFullscreen}
+        >
+          <img src={qris} alt="QRIS Code" className="h-full w-auto object-contain" />
+        </div>
+      ) : null}
+
+      {isFullscreen && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+          <img src={qris} alt="QRIS Code" className="max-h-full max-w-full" />
+          <button
+            onClick={closeFullscreen}
+            className="absolute top-4 right-4 text-white text-xl"
+          >
+            &times;
+          </button>
+        </div>
+      )}
+    </>
   );
 };
 
