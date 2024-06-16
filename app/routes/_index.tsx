@@ -101,7 +101,7 @@ export default function Index() {
             className="text-center font-black font-sans text-md text-[#EFEFEF] italic border-t-2 border-[#CE7BB0] pt-3"
             style={{ textShadow: "2px 2px 1px #CE7BB0" }}
           >
-            6.07.2024
+            06.07.2024
           </div>
         </div>
       </div>

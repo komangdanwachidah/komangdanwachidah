@@ -7,7 +7,7 @@ const Agendas = () => {
         Pernikahan kami akan dilaksanakan pada:
       </div>
       <h3 className="text-3xl md:text-4xl font-black mb-6 text-cente text-gray-700 font-sans">
-        SABTU, 6 JULI 2024
+        SABTU, 06 JULI 2024
       </h3>
       <div className="px-12 flex max-w-md mx-auto mb-10">
         <a

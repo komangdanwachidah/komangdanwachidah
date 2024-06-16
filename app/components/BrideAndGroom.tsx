@@ -1,6 +1,6 @@
 import TextWithLine from "./Utils/TextWithLine";
-import bride from "~/images/ami-img.jpg";
-import groom from "~/images/fauzi-img.jpg";
+import bride from "~/images/wachidah-img.jpg";
+import groom from "~/images/komang-img.jpg";
 
 const BrideAndGroom = () => {
   return (
